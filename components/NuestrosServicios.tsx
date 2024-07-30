@@ -5,7 +5,7 @@ const NuestrosServicios = () => {
   return (
     <section
       className="flex flex-col overflow-hidden pt-[96px] min-h-screen overflow-y-auto scroll-smooth"
-      id="Servicios"
+      id="Nuestros Servicios"
     >
       <div className="relative w-full flex flex-col">
         <div className="z-20 flex w-full flex-col">

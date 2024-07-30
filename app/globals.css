@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -15,22 +15,22 @@ body {
 }
 
 @layer utilities {
-  .btn_white { 
-    @apply  border-white bg-white px-8 py-3 text-green-50
+  .btn_white {
+    @apply border-white bg-white px-8 py-3 text-green-50;
   }
-  .btn_white_text  { 
-    @apply  border-white bg-white px-8 py-3 text-gray-90
+  .btn_white_text {
+    @apply border-white bg-white px-8 py-3 text-gray-90;
   }
-  .btn_blue  { 
-    @apply  border-[#2e569b] bg-[#2e569b] px-8 py-5 text-white
+  .btn_blue {
+    @apply border-[#2e569b] bg-[#2e569b] px-8 py-5 text-white;
   }
-  .btn_dark_green { 
-    @apply  bg-green-90 px-8 py-4 text-white transition-all hover:bg-black
+  .btn_dark_green {
+    @apply bg-green-90 px-8 py-4 text-white transition-all hover:bg-black;
   }
-  .btn_dark_green_outline  { 
-    @apply border-gray-20 bg-green-90 px-8 py-5 text-white
+  .btn_dark_green_outline {
+    @apply border-gray-20 bg-green-90 px-8 py-5 text-white;
   }
-  
+
   .max-container {
     @apply mx-auto max-w-[1440px];
   }
@@ -124,24 +124,119 @@ body {
     @apply text-[16px] font-[700];
   }
 
-  /* Hero */
-  .hero-map {
-    @apply absolute right-0 top-0 h-screen w-screen bg-pattern-2 bg-cover bg-center md:-right-28 xl:-top-60;
+  .QuienesSomos {
+    position: relative;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 8rem;
+    overflow: hidden;
+    background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
+    --tw-gradient-from: #e4faff var(--tw-gradient-from-position);
+    --tw-gradient-to: rgba(228, 250, 255, 0) var(--tw-gradient-to-position);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+    --tw-gradient-to: #dce9fd var(--tw-gradient-to-position);
+    background-size: cover;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    padding: 3rem 1.5rem;
+    --tw-text-opacity: 1;
+    color: rgb(0 0 0 / var(--tw-text-opacity));
   }
 
-  /* Camp */
-  .camp-quote {
-    @apply absolute -right-6 bottom-4 w-[140px] lg:bottom-10 xl:-right-8 xl:w-[186px] 3xl:right-0;
+  @media (min-width: 640px) {
+    .QuienesSomos {
+      flex-direction: row;
+      gap: 3rem;
+      padding-top: 6rem;
+      padding-bottom: 6rem;
+    }
   }
 
-  /* Feature */
-  .feature-phone {
-    @apply absolute top-[13%] z-10 hidden max-w-[1500px] rotate-[15deg] md:-left-16 lg:flex  3xl:left-20;
+  @media (min-width: 1024px) {
+    .QuienesSomos {
+      padding-left: 5rem;
+      padding-right: 5rem;
+    }
   }
 
-  /* Get App */
-  .get-app {
-    @apply max-container relative flex w-full  flex-col justify-between gap-32 overflow-hidden bg-green-90 bg-pattern bg-cover bg-center bg-no-repeat px-6 py-12 text-white sm:flex-row sm:gap-12 sm:py-24 lg:px-20 xl:max-h-[598px] 2xl:rounded-5xl;
+  @media (min-width: 1280px) {
+    .QuienesSomos {
+      max-height: 598px;
+    }
+  }
+
+  .nuestroperfil {
+    position: relative;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    overflow: hidden;
+    background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
+    --tw-gradient-from: #dce9fd var(--tw-gradient-from-position);
+    --tw-gradient-to: rgba(220, 233, 253, 0) var(--tw-gradient-to-position);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+    --tw-gradient-to: #e4faff var(--tw-gradient-to-position);
+    background-size: cover;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    padding: 3rem 1.5rem;
+    --tw-text-opacity: 1;
+    color: rgb(0 0 0 / var(--tw-text-opacity));
+  }
+
+  @media (min-width: 640px) {
+    .nuestroperfil {
+      flex-direction: row;
+      gap: 3rem;
+      padding-top: 6rem;
+      padding-bottom: 6rem;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .nuestroperfil {
+      padding-left: 5rem;
+      padding-right: 5rem;
+    }
+  }
+
+  @media (min-width: 1280px) {
+    .nuestroperfil {
+      max-height: 598px;
+    }
+  }
+
+  .proteccion {
+    position: relative;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    overflow: hidden;
+    --tw-bg-opacity: 1;
+    background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+    background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
+    background-size: cover;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    --tw-text-opacity: 1;
+    color: rgb(0 0 0 / var(--tw-text-opacity));
+  }
+
+  @media (min-width: 640px) {
+    .proteccion {
+      flex-direction: row;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .proteccion {
+      justify-content: space-between;
+      gap: 15rem;
+    }
   }
 }
 

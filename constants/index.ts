@@ -18,7 +18,7 @@ export const NAV_LINKS = [
     label: "Infraestructura Fisica",
   },
   { href: "#Proteccion", key: "Proteccion", label: "Protección" },
-  { href: "#Informaion", key: "Informacion", label: "Información" },
+  { href: "#Informacion", key: "Informacion", label: "Información" },
 ];
 
 // CAMP SECTION
