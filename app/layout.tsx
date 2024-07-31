@@ -1,26 +1,16 @@
-import type { Metadata } from 'next';
+import type { Metadata } from "next";
 
-import './globals.css'
-import Navbar from '@/components/Navbar';
+import "./globals.css";
 
 export const metadata: Metadata = {
-  title: 'Landsteiner',
-  description: 'Laboratorio Clinico IPS S.A.S.',
-}
+  title: "Landsteiner",
+  description: "Laboratorio Clinico IPS S.A.S.",
+};
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
-  return (
-    <html lang="en">
-      <body>
-        <Navbar />
-        <main className="relative overflow-hidden">
-          {children}
-        </main>
-      </body>
-    </html>
-  )
+  return <>{children}</>;
 }
